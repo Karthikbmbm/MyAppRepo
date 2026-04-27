@@ -1,0 +1,21 @@
+{
+  "name": "MyAppRepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": node index.js",
+    "build":"echo Build successful"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikbmbm/MyAppRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikbmbm/MyAppRepo/issues"
+  },
+  "homepage": "https://github.com/karthikbmbm/MyAppRepo#readme"
+}
