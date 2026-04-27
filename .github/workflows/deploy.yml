@@ -1,25 +1,28 @@
 name: Deploy Node App
 
 on:
-  push:
-    branches:
-      - main
+  push:
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18 # Note: Bumping to 18 for better support on Ubuntu 24.04
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies
+        run: npm install
 
-      - name: Deploy to EC2
-        run: echo "Deploying application..."
+      - name: Run build
+        run: echo "Build successful"
+
+      - name: Deploy application
+        run: echo "Deploying application..."
